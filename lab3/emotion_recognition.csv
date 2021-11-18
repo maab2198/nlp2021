@@ -1,0 +1,101 @@
+text;target
+The primary objective of Speech Emotion Recognition (SER) is to aid human to machine interaction.;speech emotion recognition
+The ideal way to reach this objective, as the trends are showing, might be to create an end-to-end learning algorithm, which is capable of processing raw input signal directly resulting in desired performance with as little human knowledge and work as possible.;speech emotion recognition
+Nowadays, we are at the dawn of Deep Learning (DL) because in a short time it has dramatically improved the stateof-the-art in many domains including SR.;speech emotion recognition
+SER is not an exception since convolutional nets as well as recurrent nets are applicable for solving this problem;speech emotion recognition
+The main advantage of DL is the fact that it requires very little engineering by hand, and it can benefit from today's increases of data amounts and computational power;speech emotion recognition
+In contrast to these traditional approaches a more novel papers have been published recently employing Deep Neural Networks into their experiments with the promising results.;speech emotion recognition
+This preliminary experiment was conducted on a smaller subset of this corpus containing 271 labeled recordings with total length of 783 seconds.;speech emotion recognition
+For regularization of the DNN, we used a 0.1 dropout [19] for all convolutional and fully connected layers except the last layer with 0.2 dropout.;speech emotion recognition
+Relu as activation function [20] was used for all layers except the Softmax output layer;speech emotion recognition
+All layers were initialized using Glorot uniform initialization;speech emotion recognition
+We split every file into 20 millisecond chunks with no overlap - vectors of length 320 (16 kHz * 20ms) obtaining total number of 39052 segments.;speech emotion recognition
+To obtain an even distribution of all classes in training and validation sets we adjusted the amounts of segments used from each class according to the class with the smallest number of segments available;speech emotion recognition
+As the first two layers of our model we used convolutional layer [16] with 32 kernels of size 7 x 1 succeeded with average pooling layer [17].;speech emotion recognition
+. After the last convolutional layer we divided the network to two branches.;speech emotion recognition
+. One with average pooling and the second with max pooling [17] which were afterwards flattened and concatenated back to main branch.;speech emotion recognition
+From this point on, the DNN consisted of only fully connected layers.;speech emotion recognition
+Using the trained model we were able to obtain the prediction probabilities for each class of each segment from validation and testing sets.;speech emotion recognition
+It was of course important to deliver the final results for the whole audio files.;speech emotion recognition
+For that purpose we computed the average probability of all segments belonging to the particular file and used it to denote the final predicted class.;speech emotion recognition
+The value of average probability can be viewed as confidence of prediction.;speech emotion recognition
+In order to perform 3 class SER predictions on 33 testing audio files of German speech, we built a deep neural network model consisting of convolutional, pooling and fully connected layers.;speech emotion recognition
+We trained it with raw, standardized input data cleared of silent segments using mini-batches of size 21 over 38 epochs on GPU.;speech emotion recognition
+After combining the predictions of segments, only one file?s emotion class out of 33 testing files has been predicted incorrectly as confusion matrix shows in Tab. V.;speech emotion recognition
+As shown in Tab. VI, our DNN achieved 96.97% accuracy on speech emotion recognition task on testing files.;speech emotion recognition
+The objective of this paper was to predict the emotional state of a person from a short voice recording split into 20 millisecond segments.;speech emotion recognition
+Our approach is context independent which means that all audio segments were classified independently.;speech emotion recognition
+The DNN thus had no knowledge of the actual context of what the actor is saying nor did it have any knowledge of the rhythm etc.;speech emotion recognition
+In this paper we compare different approaches for emotions recognition task and we propose an efficient solution based on combination of these approaches.;speech emotion recognition
+Recurrent neural network (RNN) classifier is used to classify seven emotions found in the Berlin and Spanish databases.;speech emotion recognition
+Emotion recognition in spoken dialogues has been gaining increasing interest all through current years. Speech Emotion Recognition (SER) is a hot research topic in the field of Human Computer Interaction (HCI). ;speech emotion recognition
+It has a potentially wide applications, such as the interface with robots, banking, call centers, car board systems, computer games etc;speech emotion recognition
+. For classroom orchestration or E-learning, information about the emotional state of students can provide focus on enhancement of teaching quality;speech emotion recognition
+. For example teacher can use SER to decide what subjects can be taught and must be able to develop strategies for managing emotions within the learning environment;speech emotion recognition
+m. In general, the SER is a computational task consisting of two major parts: feature extraction and emotion machine classification.;speech emotion recognition
+In fact, the emotional feature extraction is a main issue in the SER system.;speech emotion recognition
+The last step of speech emotion recognition is classification;speech emotion recognition
+It involves classifying the raw data in the form of utterance or frame of the utterance into particular class of emotion on the basis of features extracted from the data.;speech emotion recognition
+Speech emotion recognition is essentially a sequence classification problem, where the input is a variable-length sequence and the output is one single label.;speech emotion recognition
+In this experimental work, we have used Multivariate Linear Resgression (MLR), Support Vector Machine (SVM) and Recurrent Neural Networks (RNN) classifiers to identify the emotional state of spoken utterances;speech emotion recognition
+In order to demonstrate the high effectivennes of the MFCC and MS features extraction for emotion classification in speech, we provide results on two open emotional databases (Berlin-DB and Spanish-DB).;speech emotion recognition
+The performance and robustness of the recognition systems will be easily affected if it is not well-trained with suitable database.;speech emotion recognition
+Therefore, it is essential to have sufficient and suitable phrases in the database to train the emotion recognition system and subsequently evaluate its performance.;speech emotion recognition
+In this section, we detail the two emotional speech databases used in our experiments: Berlin Database and Spanish Database.;speech emotion recognition
+The Berlin database (Burkhardt et al., 2005) is widely used in emotional speech recognition.;speech emotion recognition
+. It contains 535 utterances spoken by 10 actors (5 female, 5 male) in 7 simulated emotions (anger, boredom, disgust, fear, joy, sadness and neutral).;speech emotion recognition
+The INTER1SP Spanish emotional database contains utterances from two profesional actors (one female and one male speackers).;speech emotion recognition
+The spanish corpus that we have the right to access (free for academic and research use) (Spa, ), was recorded twice in the 6 basic emotions plus neutral (anger, sadness, joy, fear, disgust, surprise, Neutral/normal).;speech emotion recognition
+The speech signal contains a large number of parameters that reflect the emotional characteristics.;speech emotion recognition
+One of the sticking points in emotion recognition is what features should be used.;speech emotion recognition
+Mel-Frequency Cepstrum coefficient is the most used representation of spectral property of voice signals.;speech emotion recognition
+These are the best for speech recognition as it takes human perception sensitivity with respect to frequencies into consideration.;speech emotion recognition
+Modulation spectral features (MSFs) are extracted from an auditory-inspired long-term spectro-temporal representation;speech emotion recognition
+These features are obtained by emulating the Spectro-temporal (ST) processing performed in the human auditory system and considers regular acoustic frequency jointly with modulation frequency.;speech emotion recognition
+While RNN models are effective at learning temporal correlations, they suffer from the vanishing gradient problem which increases with the length of the training sequences.;speech emotion recognition
+In this section, we describe the experiment environment and report the recognition accuracy of using MLR, SVM and RNN classifiers on two emotional speech database;speech emotion recognition
+A lot of uncertainties are still present for the best algorithm to classify emotions.;speech emotion recognition
+Different combinations of emotional features give different emotion detection rate.;speech emotion recognition
+The researchers are still debating for what features influence the recognition of emotion in speech;speech emotion recognition
+Apart from this, seeking for robust feature representation is also considered as part of the ongoing research, as well as efficient classification techniques for automatic speech emotion recognition.;speech emotion recognition
+More work is needed to improve the system so that it can be better used in real-time speech emotion recognition.;speech emotion recognition
+In recent years, progressively more people are interacting with virtual voice assistants, such as Siri, Alexa, Cortana and Google Assistant. ;speech emotion recognition
+Interfaces that ignore a user?s emotional state or fail to manifest the appropriate emotion can dramatically impede performance and risks being perceived as cold, socially inept, untrustworthy, and incompetent;speech emotion recognition
+Several datasets have been created over the years for training and evaluating emotion recognition models;speech emotion recognition
+A common strategy when dealing with small training datasets is to apply transfer learning techniques.;speech emotion recognition
+The model learned on the auxiliary task can be used as feature extractor or fine-tuned, after replacing some of its final layers, to the task of interest.;speech emotion recognition
+Recently, transfer learning approaches have been explored in the field of speech emotion recognition.;speech emotion recognition
+Recently, several models for automatic speech recognition (ASR) which use self-supervised pretraining have been released, including wav2vec [23] and VQ-wav2vec [24].;speech emotion recognition
+In line with those works, in this paper, we explore the use of the wav2vec 2.0 model [28], an improved version of the original wav2vec model, as a feature extractor for speech emotion recognition.;speech emotion recognition
+In our study, we extracted features from two released wav2vec 2.0 models and used them for speech emotion recognition;speech emotion recognition
+The first stage is a local encoder, which contains several convolutional blocks and encodes the raw audio into a sequence of embeddings with a stride of 20 ms and a receptive field of 25 ms;speech emotion recognition
+Two models have been released for public use, a large one and a base one where the embeddings are 1024- and 768-dimensional, respectively.;speech emotion recognition
+The models finetuned in 960 hours of LibriSpeech reach state of the art results in automatic speech recognition when evaluated in different subsets of LibriSpeech.;speech emotion recognition
+In order to match the sequence lengths of the eGeMAPS features, which use a stride of 10 ms, with the lengths of the wav2vec 2.0 features, which have a stride of 20 ms, we downsampled the eGeMAPS LLDs by averaging every 2 consecutive frames.;speech emotion recognition
+Finally, another dense layer with softmax activation returns probabilities for each of the emotion classes.;speech emotion recognition
+g. It features 24 different actors (12 males and 12 females) enacting 2 statements: ?Kids are talking by the door? and ?Dogs are sitting by the door.? with 8 different emotions: happy, sad, angry, fearful, surprise, disgust, calm, and neutral.;speech emotion recognition
+These emotions are expressed in two different intensities: normal and strong, except for neutral (normal only).;speech emotion recognition
+Each of the combinations was spoken and sung, and repeated 2 times, leading to 104 unique vocalizations per actor.;speech emotion recognition
+Following [35], we merged the neutral and calm emotions, resulting in 7 emotions, and used the first 20 actors for training, actors 20-22 for validation to do early stopping, and actors 22-24 for test.;speech emotion recognition
+The Interactive Emotional Dyadic Motion Capture (IEMOCAP) dataset [5] has a length of approximately 12 hours and consists of scripted and improvised dialogues by 10 speakers.;speech emotion recognition
+It is composed of 5 sessions, each including speech from an actor and an actress.;speech emotion recognition
+Annotators were asked to label each sample choosing one or more labels from a pool of emotions.;speech emotion recognition
+In this work, we used 4 emotional classes: anger, happiness, sadness and neutral, and following the work in [36], we relabeled excitement samples as happiness.;speech emotion recognition
+We also trimmed the waveforms to 15 seconds to reduce the computational requirements when extracting wav2vec 2.0 features;speech emotion recognition
+We hypothesize that this is because when the model is finetuned for an ASR task, information that is not relevant for that task but might be relevant for speech emotion recognition is lost from the embeddings.;speech emotion recognition
+For example, information about the pitch might not be important for speech recognition, while it is essential for speech emotion recognition.;speech emotion recognition
+This is the scenario that is most commonly used in papers as is the one with less assumptions about the available data, treating all samples from a speaker as independent from each other, not assuming that additional samples from a speaker are available at test time.;speech emotion recognition
+Moreover, they do not merge calm and neutral emotions, so the total number of emotions to be predicted is 8.;speech emotion recognition
+In this work, we explored different ways of extracting and modeling features from pretrained wav2vec 2.0 models for speech emotion recognition.;speech emotion recognition
+We evaluated our models on two standard emotion datasets, IEMOCAP and RAVDESS, and showed superior results on both cases, compared to those in recent literature.;speech emotion recognition
+audio features including 39 coefficients of Mel Frequency Cepstral Coefficients (MFCC), Zero Crossing Rate(ZCR), Harmonic to Noise Rate (HNR);speech emotion recognition
+Speech is the main and direct means of transmitting information;speech emotion recognition
+It contains a wide variety of information, and it can express rich emotional information through the emotions it contains and visualize it in response to objects, scenes or events;speech emotion recognition
+The automatic recognition of emotions by analyzing the human voice and facial expressions has become the subject of numerous researches and studies in recent years [1-5].;speech emotion recognition
+The fact that automatic emotion recognition systems can be used for different purposes in many areas has led to a significant increase in the number of studies on this subject;speech emotion recognition
+It is known that some physiological changes occur in the body due to people's emotional state.;speech emotion recognition
+Some variables such as pulse, blood pressure, facial expressions, body movements, brain waves, and acoustic properties vary depending on the emotional state.;speech emotion recognition
+For this reason, most studies on this topic have focused on automatic recognition of emotions using visual and auditory signals.;speech emotion recognition
+However, acoustic signals are the most used data after facial signs to identify a person's emotional state;speech emotion recognition
+In this article, we proposed firstly the use of a new characteristic which is the Harmonic to Noise Rate HNR in our emotion recognition system with the combination of other characteristics which are the coefficients MFCC, ZCR and TEO.;speech emotion recognition
+The process of recognizing emotions from speech involves extracting the characteristics from a corpus of emotional speech selected or implemented and, after that, the classification of emotions is done on the basis of the extracted characteristics.;speech emotion recognition
