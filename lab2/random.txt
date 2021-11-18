@@ -1,31 +1,28 @@
 The Views section describes all you need to know to configure data and views for a specific route in your Nuxt Application
- Views consist of an app template, a layout, and the actual page
- ou can define a default layout by adding a default
+Views consist of an app template, a layout, and the actual page ou can define a default layout by adding a default
 vue file inside the layouts directory
- This will be used for all pages that don't have a layout specified
- The only thing you need to include in the layout is the <Nuxt /> component which renders the page component
- You can create custom layouts by adding a 
-vue file to the layouts directory
- In order to use the custom layout you need to set the layout property in the page component where you want to use that layout
- The value will be the name of the custom layout that you have created
- A recurrent neural network (RNN) is a type of artificial neural network which uses sequential data or time series data
- These deep learning algorithms are commonly used for ordinal or temporal problems, such as language translation, natural language processing (nlp), speech recognition, and image captioning
- they are incorporated into popular applications such as Siri, voice search, and Google Translate
- Like feedforward and convolutional neural networks (CNNs), recurrent neural networks utilize training data to learn
- They are distinguished by their “memory” as they take information from prior inputs to influence the current input and output
- While traditional deep neural networks assume that inputs and outputs are independent of each other, the output of recurrent neural networks depend on the prior elements within the sequence
- While future events would also be helpful in determining the output of a given sequence, unidirectional recurrent neural networks cannot account for these events in their predictions
- Let’s take an idiom, such as “feeling under the weather”, which is commonly used when someone is ill, to aid us in the explanation of RNNs
- In order for the idiom to make sense, it needs to be expressed in that specific order
- As a result, recurrent networks need to account for the position of each word in the idiom and they use that information to predict the next word in the sequence
-  Looking at the visual below, the “rolled” visual of the RNN represents the whole neural network, or rather the entire predicted phrase, like “feeling under the weather
-” The “unrolled” visual represents the individual layers, or time steps, of the neural network
- Each layer maps to a single word in that phrase, such as “weather”
- Prior inputs, such as “feeling” and “under”, would be represented as a hidden state in the third timestep to predict the output in the sequence, “the”
+This will be used for all pages that don't have a layout specified
+The only thing you need to include in the layout is the <Nuxt /> component which renders the page component
+You can create custom layouts by adding a  vue file to the layouts directory
+In order to use the custom layout you need to set the layout property in the page component where you want to use that layout
+The value will be the name of the custom layout that you have created
+A recurrent neural network (RNN) is a type of artificial neural network which uses sequential data or time series data
+These deep learning algorithms are commonly used for ordinal or temporal problems, such as language translation, natural language processing (nlp), speech recognition, and image captioning
+they are incorporated into popular applications such as Siri, voice search, and Google Translate
+Like feedforward and convolutional neural networks (CNNs), recurrent neural networks utilize training data to learn
+They are distinguished by their “memory” as they take information from prior inputs to influence the current input and output
+While traditional deep neural networks assume that inputs and outputs are independent of each other, the output of recurrent neural networks depend on the prior elements within the sequence
+While future events would also be helpful in determining the output of a given sequence, unidirectional recurrent neural networks cannot account for these events in their predictions
+Let’s take an idiom, such as “feeling under the weather”, which is commonly used when someone is ill, to aid us in the explanation of RNNs
+In order for the idiom to make sense, it needs to be expressed in that specific order
+As a result, recurrent networks need to account for the position of each word in the idiom and they use that information to predict the next word in the sequence
+Looking at the visual below, the “rolled” visual of the RNN represents the whole neural network, or rather the entire predicted phrase, like “feeling under the weather
+The “unrolled” visual represents the individual layers, or time steps, of the neural network
+Each layer maps to a single word in that phrase, such as “weather”
+Prior inputs, such as “feeling” and “under”, would be represented as a hidden state in the third timestep to predict the output in the sequence, “the”
 The Siamese cat is one of the first distinctly recognized breeds of Asian cat
- Derived from the Wichianmat landrace, one of several varieties of cat native to Thailand (formerly known as Siam), the original Siamese became one of the most popular breeds in Europe and North America in the 19th century
+Derived from the Wichianmat landrace, one of several varieties of cat native to Thailand (formerly known as Siam), the original Siamese became one of the most popular breeds in Europe and North America in the 19th century
 The carefully refined, more extreme-featured, modern-style Siamese is characterized by blue almond-shaped eyes a triangular head shape large ears an elongated, slender, and muscular body and various forms of point colouration Other than colouration, the modern-style Siamese bears little resemblance to the original stock, and the more moderate, traditional, or "old-style" Siamese, with a much rounder head and body, has been re-established by multiple registries as the Thai cat; The International Cat Association describes the modern Siamese as affectionate, social, intelligent, and playful into adulthood, often enjoying a game of fetch;[1] Siamese tend to seek human interaction and also like companionship from other cats;
-
 The Siamese (sometimes in the traditional form) is among the foundation stock of several other breeds developed by crossbreeding with other cats
 some examples are the Oriental Shorthair and Colourpoint Shorthair, developed to expand the range of coat patterns
 the long-haired variant most often dubbed the Himalayan
@@ -33,3 +30,36 @@ and hair-mutation breeds, including the Cornish Rex, Sphynx, Peterbald, and blue
 The Siamese cat comes in two distinct variations: traditional, with an apple-shaped head and a slightly chubby body; or the modern Siamese, which are very skinny and have a wedge-shaped head
 The long-haired Siamese is recognized internationally as a Balinese cat
 Siamese cats are one of the more common breeds to have different colors irises
+Whether it is a silent stare or simply a rousing bark, dogs have found myriad ways to communicate with humans
+Now researchers have created a hi-tech option for canines left home alone: 
+a ball that allows them to call their owners on the old dog and bone.
+The device – nicknamed the DogPhone – is a soft ball that, when moved, sends a signal to a laptop that launches a video call, and the sound of a ringing telephone.
+The owner can choose whether to take the call, and when to hang up, while they can also place a call to their pet – although the dog has to move the ball to pick up
+“All this [existing] technology allows you to measure your pets’ steps or ring your pets or remotely give your dog food, but your dog doesn’t really have any choices,” said Dr Ilyena Hirskyj-Douglas, of the University of Glasgow, and first author of the research used to create the device
+She added giving animals choice and control had been shown to improve their welfare and wellbeing.
+Advertisement The DogPhone considers both owner and the dog – and gives the latter a sense of agency, she said.
+The team say that many of the calls made by Zack – who was left alone for about eight hours during testing days – appear to have been accidents although they caution that may simply be the human perspective
+“For example, when the dog triggered the system with their butt, this could have been deliberate and the dog’s unique way of triggering an interaction,” they write.
+Hirskyj-Douglas said the technology could bring benefits to pets, in particular dogs who struggle with being separated from their owners – although she admitted the device had actually caused her some anxiety.
+“It’s just giving a dogs a choice,” she said
+“We may not understand the choice that they’re making
+But that doesn’t mean they shouldn’t have a choice.”
+… we have a small favour to ask. 
+Millions are turning to the Guardian for open, independent, quality news every day, and readers in 180 countries around the world now support us financially.
+We believe everyone deserves access to information that’s grounded in science and truth, and analysis rooted in authority and integrity
+That’s why we made a different choice: to keep our reporting open for all readers, regardless of where they live or what they can afford to pay
+This means more people can be better informed, united, and inspired to take meaningful action.
+In these perilous times, a truth-seeking global news organisation like the Guardian is essential. 
+Red oceans are all the industries in existence today – the known market space
+In red oceans, industry boundaries are defined and accepted, and the competitive rules of the game are known.
+Here, companies try to outperform their rivals to grab a greater share of existing demand. As the market space gets crowded, profits and growth are reduced
+Products become commodities, leading to cutthroat or ‘bloody’ competition
+Hence the term red oceans.
+Blue oceans, in contrast, denote all the industries not in existence today – the unknown market space, untainted by competition
+In blue oceans, demand is created rather than fought over
+There is ample opportunity for growth that is both profitable and rapid.
+In blue oceans, competition is irrelevant because the rules of the game are waiting to be set
+A blue ocean is an analogy to describe the wider, deeper potential to be found in unexplored market space
+A blue ocean is vast, deep, and powerful in terms of profitable growth
+We have no shareholders or billionaire owner, meaning our journalism is free from commercial and political influence – this makes us different
+When it’s never been more important, our independence allows us to fearlessly investigate, challenge and expose those in power
